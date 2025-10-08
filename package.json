@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "date-fns": "^2.13.0",
@@ -15,6 +17,8 @@
     "react-dom": "16.13.1",
     "react-lazy-load": "^3.1.13",
     "remark": "^13.0.0",
-    "remark-html": "^11.0.1"
-  }
+    "remark-html": "^11.0.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
